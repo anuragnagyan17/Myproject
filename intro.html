@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Portfolio</title>
+    <style>
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, rgb(250, 136, 84) rgb(89, 104, 200));
+}
+.nevbar{
+    display: flex;
+    width: 98%;
+    position: fixed;
+    background-color: #333;
+    box-shadow: 10px 10px 10px #333;
+}
+#nev{
+    display: flex;
+    width: 62%;
+    padding-left: 465px;
+}
+#myname{
+    padding-top: 2px;
+    margin-top: 13px;
+    margin-left: 30px;
+    width: 42%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(210, 231, 126)
+}
+.nevbar li a{
+    text-decoration: none;
+    color:rgb(210, 231, 126);
+}
+.nevbar li a:hover{
+    color: #fff;
+}
+.nevbar li{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    float: right;
+    margin: 6px 13px;
+    padding: 4px 3px;
+    
+}
+header{
+    color: #090909;
+    padding: 100px;
+    display: flex;
+    border-bottom: #fff;
+    text-shadow: 1px 1px 1px #232121;
+}
+h1{
+    font-size: 280%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#name1{
+    color: rgb(13, 130,142);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.frishtpage{
+    padding: 0%;
+    width: 46%;
+    text-align: left;
+    justify-content: space-around;
+}
+.myimg{
+    width: 34vw;
+    padding: 0%;
+    margin: 0%;
+   text-align: right;
+   border-color: #f10c0c;
+   border-radius: 10%;
+
+}
+img{
+    height: 371px;
+    padding: 0%;
+    width: fit-content;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px  #232121;
+}
+#icons{
+    padding-top: 5%;
+    padding-right: 46%;
+    padding-left: 0%;
+    margin: 0%;
+    display: flex;
+    box-sizing: border-box;
+}
+.icons li a img{
+    height: 40%;
+    width: 120%;
+}
+.icons li{
+    list-style: none;
+    float: right;
+}
+
+h2 {
+    margin: auto;
+    font-size: 33px;
+
+}
+#one{
+    text-align: center;
+    color: #090909;
+    font-size: 360%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+#two{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 137%;
+}
+#btn{
+    font-size: 195%;
+    border-radius: 10px;
+    background-color: rgb(157, 160, 184);
+    margin: 10px 10px;
+}
+#btn:hover{
+    background-color: aliceblue;
+}
+.aboutext{
+    text-align: center;
+}
+.about{
+    padding: 26px;
+    margin-top: 2px;
+    color: rgb(13, 130, 141);
+    height: auto
+    
+}
+.skills{
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    width: auto;
+    
+}
+#skill{
+    display: flex;
+    width: 81%;
+    padding-top: 7%;
+    padding-left: 10%;
+}
+.skills li{
+    list-style: none;
+    float: right;
+    margin: 2px 21px;
+    padding: 4px 18px;
+}
+#skillimg{
+    height: 74%;
+    width: 95%;
+    box-shadow: none;
+}
+h3{
+    text-align: center;
+}
+.projects li{
+    list-style: none;
+    margin: 3px 136px;
+}
+.project{
+    display: flex;
+}
+.contactme{
+    display: flex;
+}
+.contact li{
+    list-style: none;
+}
+.contact-one{
+    font-size: 138%;
+    font-weight: bold;
+}
+.contact-second{
+    width: 233px;
+}
+.contact-child{
+    font-size: 130%;
+    font-weight: lighter;
+}
+.contact-child li{
+    margin: 4px 2px;
+}
+.contact #contact-box{
+    display: flex;
+    align-items: center;
+    padding-bottom: 100px;
+    margin-left: 117%;
+}
+#contact-box input, #contact-box textarea{
+
+    width: 575%;
+    padding: 0.4rem;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+html{ /* for scrolling */
+            scroll-behavior: smooth;
+        }
+    </style>
+    <!-- start portfolio html -->
+</head>
+<body>
+    <div class="nevbar">
+    <div id="myname">
+        <h2>Portfolio</h2>
+    </div>
+        <ul id="nev">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#abouts">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact".>Contact me</a></li>
+        </ul>
+
+    </div>
+    <header>
+        <div id="home" class="frishtpage">
+        <h1>Hi! I am </h1><h1 id="name1">Anurag Nagyan</h1>
+        <p>Web Developer | Designer | Creative Thinker</p>
+        <div class="icons">
+            <ul id="icons">
+                <li>
+                    <a href="https://www.instagram.com/its_anurag_nagyan8970/" target="_blank"> 
+                        <img id="imgicon" src="instagram.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/anurag.nagyan.3" target="_blank">
+                        <img id="imgicon" src="facebook.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/anurag-nagyan-44a406214/" target="_blank">
+                        <img id="imgicon" src="linkedin.svg" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/anuragnagyan17" target="_blank">
+                        <img id="imgicon" src="square-github.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        <div class="myimg"><img id="atimg" src="portfolio2.png" alt="Anurag_Nagyan"></div>
+    
+</header>
+<hr>
+    <section id="abouts" class="about">
+        <div class="aboutext">
+        <h2 id="one">About Me</h2>
+        <p id="two">Hello my name is Anurag Nagyan, student at Ajay Kumar Garg Engineering Colage <br>
+            currently pursuing Bachelor's of Technology in Computer Science and Engineering (Data Science),
+             2nd year.<br> And I complete my schooling from Lala Jagdish Parshad Sarsvati Inter Collage Muzaffarnagar.<br>
+             Finding creative solutions to problems is something I have always enjoyed. <br>
+            As a kid I loved tinkering with things that were broken, figuring out how they worked, and fixing them again.</p>
+            <i><button id="btn">My Resume</button></i>
+            <i><button id="btn">About Me</button></i>
+        </div>
+        <hr>
+        <div class="skills">
+            <h2 id="one">skills</h2>
+            <ul id="skill">
+                <li><a>
+                    <img id="skillimg" src="html.png" alt="">
+                </a></li>
+                <li><a>
+                    <img id="skillimg" src="css.png">
+                </a></li>
+                <li><a>
+                    <img id="skillimg" src="js.jpg">
+                </a></li>
+                <li><a>
+                    <img id="skillimg" src="C_LANG.png" alt="">
+                </a></li>
+            </ul>
+        </div>
+    </section>    
+       <hr>
+
+    <section id="projects" class="projects">
+        <h2 id="one">Projects</h2>
+        <!-- my project details -->
+        <ul class="project">
+            <li>
+            <h3>Project 1 : Landpage</h3>
+           <a href="http://127.0.0.1:5500/index.html" target="_blank">
+            <img src="landpage.png" alt="">
+           </a>  
+        </li>
+        <li>
+            <h3>Project 2 : Calculator</h3>
+            <a href="http://127.0.0.1:5501/web%20D/calculeter/index.html" target="_blank">
+            <img src="calculator.png" alt="">
+            </a>
+        </li>
+        </section>
+        <!-- Add more project in future -->
+    <hr>
+
+    <section id="contact" class="contact">
+        <h2 id="one">Contact Me</h2>
+        <div class="contactme">
+        <div class="contact-one">
+            <ul>
+                <li>Call :</li>
+                <li>Address :</li>
+                <li>E-mail :</li>
+            </ul>
+        </div>
+        <div class="contact-child">
+            <ul>
+                <li>----------</li>
+                <li>Muzaffarnagar</li>
+                <li>anuragnagyan8@gamil.com</li>
+            </ul>
+        </div>
+            <div class="contact-second">
+                <div id="contact-box">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Email:</label>
+                            <input type="email" name="name" id="email" placeholder="Enter your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Phone Number:</label>
+                            <input type="phone" name="name" id="phone" placeholder="Enter your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea name="Message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <p>copyright &#169; anuragportfolio.com | All Rights Reserved 2023</p>
+    </footer>
+</body>
+</html>
